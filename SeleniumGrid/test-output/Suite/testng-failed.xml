@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name=" Chrome Test(failed)">
+    <parameter name="port" value="4455"/>
+    <classes>
+      <class name="com.test.SeleniumGrid">
+        <methods>
+          <include name="setup"/>
+          <include name="test01"/>
+        </methods>
+      </class> <!-- com.test.SeleniumGrid -->
+    </classes>
+  </test> <!--  Chrome Test(failed) -->
+  <test thread-count="3" parallel="tests" name=" firefox Test(failed)">
+    <parameter name="port" value="4457"/>
+    <classes>
+      <class name="com.test.SeleniumGrid">
+        <methods>
+          <include name="setup"/>
+          <include name="test01"/>
+        </methods>
+      </class> <!-- com.test.SeleniumGrid -->
+    </classes>
+  </test> <!--  firefox Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
